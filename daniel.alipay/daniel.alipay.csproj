@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AlipayEasySDK" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\daniel.bll\daniel.bll.csproj" />
+    <ProjectReference Include="..\daniel.model\daniel.model.csproj" />
+  </ItemGroup>
+
+
+</Project>
