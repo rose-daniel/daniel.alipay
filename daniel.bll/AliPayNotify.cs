@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace daniel.bll
 {
-    public class AliPayiNotify
+    public class AliPayNotify
     {
         public static bool Add(Dictionary<string, string> items)
         {
@@ -68,7 +68,7 @@ namespace daniel.bll
             permission[19].Value = model.app_id;
             permission[20].Value = model.seller_id;
 
-            int row = DbHelper.ExecuteNonQuery("INSERT INTO `aliPayiNotify` (`gmt_create`,`charset`,`gmt_payment`,`notify_time`,`subject`,`buyer_id`,`invoice_amount`,`version`,`notify_id`,`fund_bill_list`,`notify_type`,`out_trade_no`,`total_amount`,`trade_status`,`trade_no`,`auth_app_id`,`receipt_amount`,`point_amount`,`buyer_pay_amount`,`app_id`,`seller_id`) VALUES (@gmt_create,@charset,@gmt_payment,@notify_time,@subject,@buyer_id,@invoice_amount,@version,@notify_id,@fund_bill_list,@notify_type,@out_trade_no,@total_amount,@trade_status,@trade_no,@auth_app_id,@receipt_amount,@point_amount,@buyer_pay_amount,@app_id,@seller_id);", permission);
+            int row = DbHelper.ExecuteNonQuery("INSERT INTO `aliPayNotify` (`gmt_create`,`charset`,`gmt_payment`,`notify_time`,`subject`,`buyer_id`,`invoice_amount`,`version`,`notify_id`,`fund_bill_list`,`notify_type`,`out_trade_no`,`total_amount`,`trade_status`,`trade_no`,`auth_app_id`,`receipt_amount`,`point_amount`,`buyer_pay_amount`,`app_id`,`seller_id`) VALUES (@gmt_create,@charset,@gmt_payment,@notify_time,@subject,@buyer_id,@invoice_amount,@version,@notify_id,@fund_bill_list,@notify_type,@out_trade_no,@total_amount,@trade_status,@trade_no,@auth_app_id,@receipt_amount,@point_amount,@buyer_pay_amount,@app_id,@seller_id);", permission);
 
             if (row > 0)
             {
