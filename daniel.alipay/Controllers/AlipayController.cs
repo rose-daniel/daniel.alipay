@@ -85,7 +85,7 @@ namespace daniel.alipay.Controllers
             // 验证成功
             if (Factory.Payment.Common().VerifyNotify(resData) == true)
             {
-                AliPayiNotify.Add(resData);
+                AliPayNotify.Add(resData);
                 //string json = JsonConvert.SerializeObject(resData, Formatting.Indented);
                 //Utils.WriteLog($"{DateTime.Now.ToString()}-验证成功：" + json);
             }
