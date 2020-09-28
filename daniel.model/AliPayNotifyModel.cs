@@ -4,7 +4,7 @@ using System.Text;
 
 namespace daniel.model
 {
-    public class AliPayiNotifyModel
+    public class AliPayNotifyModel
     {
 
         public int id { get; set; }
