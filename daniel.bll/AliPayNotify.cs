@@ -11,7 +11,7 @@ namespace daniel.bll
     {
         public static bool Add(Dictionary<string, string> items)
         {
-            AliPayiNotifyModel model = new AliPayiNotifyModel();
+            AliPayNotifyModel model = new AliPayNotifyModel();
             PropertyInfo[] props = model.GetType().GetProperties();
             Parallel.ForEach(props, p =>
             {
